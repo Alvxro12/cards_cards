@@ -19,27 +19,6 @@ SQLite (Base de datos local por defecto)
 
 TypeScript
 
-Estructura principal
-cards-and-cards/
-│
-├── prisma/
-│   ├── schema.prisma
-│   └── migrations/
-│
-├── src_cards/
-│   ├── cards/
-│   │   ├── cards.controller.ts
-│   │   ├── cards.service.ts
-│   │   └── dto/
-│   │       └── create-card.dto.ts
-│   ├── app.module.ts
-│   └── main.ts
-│
-├── .env
-├── .gitignore
-├── package.json
-└── README.md
-
 Endpoints principales
 Método	Endpoint	    Descripción
 GET     /cards	      Obtiene todas las cartas
