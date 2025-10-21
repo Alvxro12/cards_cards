@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+//Tablas auxiliares
+model CardType {
+  id    Int    @id @default(autoincrement())
+  name  String
+  cards Card[]
+}
+
+model Rarity {
+  id    Int    @id @default(autoincrement())
+  name  String
+  cards Card[]
+}
+
+model Region {
+  id   Int    @id @default(autoincrement())
+  name String
+  cards Card[]
+}
+
+model Magictype {
+  id   Int    @id @default(autoincrement())
+  name String
+  cards Card[]
+}
+
+//Tabla principal
+model Card {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String
+  typeId      Int
+  rarityId    Int
+  regionId    Int
+  magictypeId Int
+  power       Int
+  defense     Int
+  armor       Int
+  health      Int
+  createdAt   DateTime @default(now())
+
+  type   CardType @relation(fields: [typeId], references: [id])
+  rarity Rarity   @relation(fields: [rarityId], references: [id])
+  region Region   @relation(fields: [regionId], references: [id])
+  magictype Magictype @relation(fields: [magictypeId], references: [id])
+}
