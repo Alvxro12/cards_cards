@@ -40,6 +40,7 @@ export class CardsService {
         defense: data.defense,
         armor: data.armor,
         health: data.health,
+        imageurl: data.imageurl
       },
   });
 }

@@ -47,6 +47,7 @@ model Card {
   defense     Int
   armor       Int
   health      Int
+  imageurl    String?
   createdAt   DateTime @default(now())
 
   type   CardType @relation(fields: [typeId], references: [id])

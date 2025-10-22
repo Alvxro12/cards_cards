@@ -9,4 +9,5 @@ export class CreateCardDto {
     defense: number;
     armor: number;
     health: number;
+    imageurl: string
 }

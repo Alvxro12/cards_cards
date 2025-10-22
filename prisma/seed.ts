@@ -54,7 +54,8 @@ async function main() {
         regionId: 6,
         typeId: 1,
         rarityId: 2,
-        magictypeId: 1
+        magictypeId: 1,
+        imageurl: "https://www.reddit.com/r/LostMinesOfPhandelver/comments/15ikb6v/daran_edermath/?tl=es-419",
         },
         
         {
@@ -67,7 +68,8 @@ async function main() {
         regionId: 2,
         typeId: 2,
         rarityId: 1,
-        magictypeId: 5
+        magictypeId: 5,
+        imageurl: "https://i.pinimg.com/736x/6c/d6/0a/6cd60ab760dafb1aaac87bf114e7f157.jpg"
         },
 
         {
@@ -80,7 +82,8 @@ async function main() {
         regionId: 5,
         typeId: 1,
         rarityId: 3,
-        magictypeId: 4
+        magictypeId: 4,
+        imageurl: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtEBiWidINVCqzdPtjryMlM92OftHJPJYvUT7i9IcMmEaVhjXd0JdqRU6bfrvheiuNij9yUm7xX9v5LVO69Jn15Zzctk9xmqNYw5QkfWgMUjOy2F3pf-and1pmUfSVG1OV_hGCHjLf-d0/s1600/quori.jpg"
         },
         ]
     })
